@@ -1,0 +1,351 @@
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Mulish", sans-serif;
+  --tertiary-font: "Lily Script One", sans-serif;
+  --primary-color: #a00db1;
+  --secondary-color: #7d3bf7;
+}
+.lily-script-font {
+  font-family: "Lily Script One", sans-serif;
+}
+.mulish-font {
+  font-family: var(--secondary-font);
+  font-weight: 300px;
+}
+
+body {
+  background-color: rgb(29, 2, 46);
+  font-family: var(--primary-font);
+  font-weight: 400;
+  color: #fff;
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+
+/* custom scroll bar  */
+
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Transparent track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+  border-radius: 6px; /* Rounded corners */
+}
+
+.first-section .navbar {
+  background-color: rgb(29, 2, 46);
+}
+
+/* .second-section .col-lg-7 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("../gif/hero-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+} */
+.second-section {
+  min-height: 450px;
+}
+
+.name-txt,
+.title-txt {
+  font-size: 3.4vmax;
+  font-family: var(--primary-font);
+  font-weight: 600;
+}
+.name-txt span {
+  font-family: var(--tertiary-font);
+  font-weight: 400;
+}
+.title-txt {
+  font-weight: 900;
+  background: linear-gradient(
+    -50deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.intro p {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.logos i {
+  font-size: 4rem;
+}
+.circle-div {
+  background-color: var(--primary-color);
+  height: 25vmax;
+  width: 25vmax;
+  top: 40px;
+  left: 70px;
+}
+.gifs img {
+  width: 600px;
+}
+
+.hero-btn {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  cursor: pointer;
+}
+.hero-btn:nth-child(1) {
+  border: 1px solid #a00db1;
+  box-shadow: 0 4px 10px rgba(187, 150, 255, 0.429);
+}
+.hero-btn:nth-child(1):hover {
+  background: linear-gradient(-34deg, #a00db1, #7d3bf7) !important;
+}
+.hero-btn:nth-child(2) {
+  background: linear-gradient(-34deg, #a00db1, #7d3bf7);
+  box-shadow: 0 4px 10px rgba(187, 150, 255, 0.429) !important;
+}
+.hero-btn:nth-child(2):hover {
+  border: 1px solid #a00db1;
+  background: transparent !important ;
+}
+
+/* card styling  */
+
+.project-section .col-12 h3,
+.svg-setting {
+  background-repeat: no-repeat;
+  background-position-x: 15%;
+}
+.about-text-section {
+  background-repeat: no-repeat;
+}
+
+.third-section .col-12 {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.card {
+  border-radius: 2.4rem !important;
+}
+.card img {
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+.cb-1 {
+  box-shadow: 0 4px 10px rgba(187, 150, 255, 0.429);
+}
+.cb-2 {
+  box-shadow: 0 4px 10px rgba(255, 255, 150, 0.429);
+}
+.cb-3 {
+  box-shadow: 0 4px 10px rgba(187, 150, 255, 0.429);
+}
+.card:hover {
+  border: 1px solid #ffffffae;
+}
+.card-body,
+.card {
+  background-color: transparent;
+}
+.third-section .card-body .card-text {
+  font-family: var(--secondary-font);
+  font-weight: 200;
+}
+.card-img-top {
+  z-index: -8;
+}
+
+.git-btn:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+/* About Section  */
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.time-container {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+  /* background: rgb(0, 0, 0, 0.3); */
+  animation: movedown 1s linear forwards;
+  opacity: 0;
+}
+@keyframes movedown {
+  0% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.time-container:nth-child(1) {
+  animation-delay: 0s;
+}
+.time-container:nth-child(2) {
+  animation-delay: 1s;
+}
+.time-container:nth-child(3) {
+  animation-delay: 2s;
+}
+.time-container:nth-child(4) {
+  animation-delay: 3s;
+}
+.text-box {
+  padding: 10px;
+  padding-left: 30px;
+  background: #fff;
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.lottie-animation {
+  transform: scale(2) !important;
+}
+.left-container {
+  left: 0;
+}
+.right-container {
+  left: 50%;
+}
+.time-container img {
+  position: absolute;
+  width: 30px;
+  border-radius: 50%;
+  right: -15px;
+  top: 32px;
+  z-index: 10;
+}
+.right-container img {
+  left: -15px;
+}
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+  animation: moveline 3s linear forwards;
+}
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.left-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #fff;
+  right: -12px;
+}
+.right-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #fff;
+  left: -12px;
+}
+.fourth-section {
+  border-color: #d3d3d392;
+}
+
+.submit-btn {
+  box-shadow: 0 4px 8px rgba(187, 150, 255, 0.639);
+  border: solid 1px rgba(216, 216, 216, 0.651);
+}
+.footer-icons i:nth-child(1):hover {
+  text-shadow: 0 4px 8px rgba(218, 136, 243, 0.639);
+}
+.footer-icons i:nth-child(2):hover {
+  text-shadow: 0 4px 8px rgba(243, 152, 136, 0.452);
+}
+.submit-btn:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.arrow-svg{
+  top: 30%;
+  left:60%
+
+}
+
+@media (max-width: 992px) {
+ .cta p{
+  width: 75% !important;
+ }
+  .lottie-animation {
+    transform: none !important;
+  }
+  .arrow-svg{
+    left:70%  
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline {
+    margin: 50px auto;
+  }
+  .timeline:after {
+    left: 31px;
+  }
+  .time-container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+  .text-box {
+    font-size: 13px;
+  }
+  .text-box small {
+    margin-bottom: 10px;
+  }
+  .right-container {
+    left: 0%;
+  }
+  .time-container img {
+    left: 13px;
+  }
+  .left-container-arrow,
+  .right-container-arrow {
+    border-right: 15px solid#fff;
+    border-left: 0;
+    left: -12px;
+  }
+}
